@@ -1,5 +1,5 @@
 {
-    "name": "qcubed/plugin_ckeditor",
+    "name": "kukrik/ckeditor",
     "description": "QCubed plugin for CKEditor.",
     "type": "qcubed-library",
     "keywords": ["qcubed", "ckeditor"],
