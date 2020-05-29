@@ -37,7 +37,6 @@ class CKEditorBase extends TextBoxBase {
 	}
 
 	protected function registerFiles() {
-
 		$this->AddJavascriptFile(QCUBED_CKEDITOR_ASSETS_URL . "/php/QCKSetup.js.php");
 		$this->AddJavascriptFile(QCUBED_VENDOR_URL . "/ckeditor/ckeditor/ckeditor.js");
 		$this->AddJavascriptFile(QCUBED_VENDOR_URL . "/ckeditor/ckeditor/adapters/jquery.js");
@@ -67,7 +66,6 @@ class CKEditorBase extends TextBoxBase {
 	}
 
 	public function __set($strName, $mixValue) {
-
 		//$this->blnModified = true;
 		switch ($strName) {
 			case "ReadyFunction":
@@ -93,7 +91,6 @@ class CKEditorBase extends TextBoxBase {
 				}
 				break;
 
-
 			default:
 				try {
 					parent::__set($strName, $mixValue);
@@ -102,7 +99,6 @@ class CKEditorBase extends TextBoxBase {
 					throw $objExc;
 				}
 				break;
-
 		}
 	}
 

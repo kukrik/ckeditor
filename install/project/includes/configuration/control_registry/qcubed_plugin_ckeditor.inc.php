@@ -8,7 +8,7 @@
 
 use QCubed\ModelConnector\ControlType;
 
-$controls[ControlType::BLOB][] = '\\QCubed\\Plugin\\QCKEditor';
-$controls[ControlType::TEXT][] = '\\QCubed\\Plugin\QCKEditor';
+$controls[ControlType::BLOB][] = '\\QCubed\\Plugin\\CKEditor';
+$controls[ControlType::TEXT][] = '\\QCubed\\Plugin\\CKEditor';
 
 return $controls;
