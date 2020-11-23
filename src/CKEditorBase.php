@@ -5,7 +5,6 @@
 
 namespace QCubed\Plugin;
 
-use QCubed as Q;
 use QCubed\Exception\Caller;
 use QCubed\Exception\InvalidCast;
 use QCubed\Project\Control\TextBox;
