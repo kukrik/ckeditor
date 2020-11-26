@@ -10,8 +10,8 @@ namespace QCubed\Plugin;
 
 class CKEditor extends CKEditorBase
 {
-	public function  __construct($objParentObject, $strControlId = null) {
+	/*public function  __construct($objParentObject, $strControlId = null) {
 		parent::__construct($objParentObject, $strControlId);
-	}
+	}*/
 
 }

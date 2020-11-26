@@ -1,18 +1,14 @@
 <?php
 /**
- * This file contains the QCKEditor Class.
+ * This file contains the CKEditor Class.
  */
 
 namespace QCubed\Plugin;
 
-use QCubed as Q;
 use QCubed\Exception\Caller;
 use QCubed\Exception\InvalidCast;
-use QCubed\Project\Control\ControlBase;
-use QCubed\Project\Control\FormBase;
 use QCubed\Project\Control\TextBox;
 use QCubed\Control\TextBoxBase;
-use QCubed\Project\Application;
 use QCubed\Type;
 
 /**
@@ -23,7 +19,7 @@ use QCubed\Type;
  * @property-write string $ReadyFunction JS function to pass to the ckeditor creation instance
  * @property-write string $Configuration Configuration options to pass to the ckeditor instance
  */
-class CKEditorBase extends TextBoxBase {
+class CKEditorBase extends \QCubed\Project\Control\TextBox {
 
 	protected $strJsReadyFunc = 'function(){}';
 	protected $strConfiguration = '{}';
@@ -31,13 +27,12 @@ class CKEditorBase extends TextBoxBase {
 	public function __construct($objParentObject, $strControlId = null) {
 		parent::__construct($objParentObject, $strControlId);
 		$this->registerFiles();
-
 		$this->strCrossScripting = TextBox::XSS_ALLOW;
 		$this->strTextMode = TextBoxBase::MULTI_LINE;
 	}
 
 	protected function registerFiles() {
-		$this->AddJavascriptFile(QCUBED_CKEDITOR_ASSETS_URL . "/php/QCKSetup.js.php");
+		$this->AddJavascriptFile(QCUBED_CKEDITOR_ASSETS_URL . "/js/CKSetup.js");
 		$this->AddJavascriptFile(QCUBED_VENDOR_URL . "/ckeditor/ckeditor/ckeditor.js");
 		$this->AddJavascriptFile(QCUBED_VENDOR_URL . "/ckeditor/ckeditor/adapters/jquery.js");
 	}

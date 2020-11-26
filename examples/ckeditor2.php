@@ -8,6 +8,7 @@ use QCubed\Project\Control\Button;
 use QCubed\Control\Panel;
 use QCubed\Event\Click;
 use QCubed\Action\Ajax;
+use QCubed\Action\Server;
 use QCubed\Js;
 
 /**
@@ -27,9 +28,11 @@ class SampleForm2 extends Form
 		$this->txtEditor = new Q\Plugin\CKEditor($this);
 		$this->txtEditor->Text = '<b>Something</b> to start with.';
 		$this->txtEditor->Configuration = 'ckConfig';
+		$this->txtEditor->Rows = 15;
 
 		$this->btnSubmit = new Button($this);
 		$this->btnSubmit->Text = "Submit";
+		$this->btnSubmit->PrimaryButton = true;
 		$this->btnSubmit->AddAction(new Click(), new Ajax('submit_click'));
 
 		$this->pnlResult = new Panel($this);

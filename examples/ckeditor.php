@@ -8,6 +8,7 @@ use QCubed\Project\Control\Button;
 use QCubed\Control\Panel;
 use QCubed\Event\Click;
 use QCubed\Action\Ajax;
+use QCubed\Action\Server;
 use QCubed\Js;
 
 class SampleForm extends Form
