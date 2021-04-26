@@ -12,6 +12,5 @@
     },
     "extra": {
         "examples": ["ckeditor.php", "ckeditor2.php"]
-    },
-    "minimum-stability": "dev"
+    }
 }
