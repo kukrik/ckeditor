@@ -2,10 +2,10 @@
     "name": "kukrik/ckeditor",
     "description": "QCubed plugin for CKEditor.",
     "type": "qcubed-library",
-    "keywords": ["qcubed", "ckeditor"],
+    "keywords": ["qcubed-4", "ckeditor"],
     "license": "MIT",
     "require": {
-        "php": ">=5.5"
+        "php": ">=7.0"
     },
     "autoload": {
         "psr-4": {"QCubed\\Plugin\\": "src/"}
