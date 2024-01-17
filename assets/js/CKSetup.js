@@ -14,7 +14,7 @@ qcubed.qckeditor = function (inst, formId, controlId, customReadyFunc) {
         }
     });
 
-    if (customReadyFunc) {
+    if (typeof customReadyFunc === 'function') {
         customReadyFunc.call(inst, formId, controlId);
     }
 };
